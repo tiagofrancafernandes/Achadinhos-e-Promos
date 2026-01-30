@@ -13,6 +13,9 @@ import {
     Star,
 } from 'lucide-react';
 
+import image1 from '@/assets/img/pessoa-triste-sem-promo.png';
+import image2 from '@/assets/img/promos.png';
+
 const MAIN_GROUP_LINK = process.env.VITE_MAIN_GROUP_LINK || `https://wa.me/seu-link-do-grupo-123`;
 
 const getGroupLink = () => MAIN_GROUP_LINK;
@@ -111,7 +114,7 @@ const ComparisonSection = () => (
                 <div className="bg-slate-50 rounded-3xl p-8 border-2 border-slate-200 flex flex-col items-center group hover:border-slate-300 transition-colors">
                     <div className="relative mb-8 w-full aspect-square overflow-hidden rounded-2xl">
                         <img
-                            src="./assets/img/pessoa-triste-sem-promo.png"
+                            src={image1}
                             alt="Pessoa triste comprando sem desconto"
                             className="w-full h-full object-cover filter brightness-75 transition-transform duration-500 group-hover:scale-105"
                         />
@@ -150,7 +153,7 @@ const ComparisonSection = () => (
                     <div className="absolute -top-10 -right-10 w-40 h-40 bg-green-500/10 rounded-full blur-3xl"></div>
                     <div className="relative mb-8 w-full aspect-square overflow-hidden rounded-2xl ring-4 ring-green-100">
                         <img
-                            src="./assets/img/promos.png"
+                            src={image2}
                             alt="Pessoa feliz comprando com desconto"
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                         />
